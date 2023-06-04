@@ -1,0 +1,32 @@
+$background: rgb(22, 19, 23);
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  min-height: 100vh;
+  height: 100%;
+  font-family: system-ui;
+  background-color: $background;
+}
+
+button {
+  &[data-cam] {
+    position: fixed;
+    inset: 20px;
+    height: 45px;
+    width: fit-content;
+    padding-inline: 40px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: white;
+    border: 2px solid gray;
+  }
+}
